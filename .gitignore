@@ -1,3 +1,4 @@
-/data/
+/data/*
 /sasv_eval_scores.txt
-/log/
+/log/*
+/.idea/*
