@@ -66,17 +66,17 @@ if __name__ == "__main__":
     # --- CẤU HÌNH ĐƯỜNG DẪN ---
     # Đường dẫn đến file âm thanh bạn muốn kiểm tra
     # target
-    input_audio = "../data/LA/LA/ASVspoof2019_LA_dev/flac/LA_D_3513335.flac"
+    input_audio = "./data/LA/LA/ASVspoof2019_LA_dev/flac/LA_D_3513335.flac"
     # nontarget
-    # input_audio = "../data/LA/LA/ASVspoof2019_LA_dev/flac/LA_D_1608630.flac"
-    # input_audio = "../data/LA/LA/ASVspoof2019_LA_dev/flac/LA_D_8980393.flac"
+    # input_audio = "./data/LA/LA/ASVspoof2019_LA_dev/flac/LA_D_1608630.flac"
+    # input_audio = "./data/LA/LA/ASVspoof2019_LA_dev/flac/LA_D_8980393.flac"
     # spoof
-    # input_audio = "../data/LA/LA/ASVspoof2019_LA_dev/flac/LA_D_4067937.flac"
-    # input_audio = "../data/LA/LA/ASVspoof2019_LA_dev/flac/LA_D_6479435.flac"
+    # input_audio = "./data/LA/LA/ASVspoof2019_LA_dev/flac/LA_D_4067937.flac"
+    # input_audio = "./data/LA/LA/ASVspoof2019_LA_dev/flac/LA_D_6479435.flac"
 
     # Đường dẫn đến file cấu hình và trọng số (theo file bạn đã upload)
-    config_file = "./config/AASIST.conf"
-    weight_file = "./models/weights/AASIST.pth"
+    config_file = "./aasist/config/AASIST.conf"
+    weight_file = "./aasist/models/weights/AASIST.pth"
 
     # --- CHẠY DEMO ---
     score = predict_bonafide_score(input_audio, config_file, weight_file)

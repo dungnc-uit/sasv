@@ -114,7 +114,7 @@ if __name__ == "__main__":
     # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     device = torch.device("cpu")
     # Đường dẫn đến file model pretrain (bạn cần file này từ thư mục exps)
-    MODEL_PATH = "exps/pretrain.model"
+    MODEL_PATH = "./ecapa/exps/pretrain.model"
 
     # Đường dẫn 2 file âm thanh (FLAC) cần so sánh
     # Bạn thay thế bằng đường dẫn thực tế của bạn
